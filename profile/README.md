@@ -21,7 +21,8 @@ verifies it statistically against the baseline, and rolls it back automatically 
 ### Get started
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/manaskumar3003/alror-cli/main/scripts/install.sh | sh
+go install github.com/manaskumar3003/alror-cli/cmd/alror@latest
+# after the first release: curl -fsSL https://raw.githubusercontent.com/manaskumar3003/alror-cli/main/scripts/install.sh | sh
 alror init
 alror risk
 alror deploy -s checkout-api -i registry.example.com/checkout-api:v2
